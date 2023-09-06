@@ -1,0 +1,32 @@
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  top: 0;
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+  border-radius: 4px;
+  width: 15rem;
+  height: auto;
+  border: solid 1px;
+  margin-left: 3rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-user {
+  margin-bottom: 2rem;
+}
+
+.like-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 1rem;
+}

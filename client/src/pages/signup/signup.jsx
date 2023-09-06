@@ -16,7 +16,7 @@ const Signup = () => {
       email: '',
       password: '',
     },
-    signupValidation,
+    validationSchema:signupValidation,
     onSubmit: async (values) => {
       const res = await backend.post('/auth/signup', values);
       console.log(res);

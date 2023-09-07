@@ -1,4 +1,4 @@
-# Blog-app
+# Social Media
 ## Installation
 
 Clone the project

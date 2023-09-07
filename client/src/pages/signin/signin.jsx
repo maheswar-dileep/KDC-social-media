@@ -1,7 +1,7 @@
 import { useFormik } from 'formik';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import signupValidation from '../../utils/validations/signup.jsx';
+import signinValidation from '../../utils/validations/signin.js';
 import './signin.css';
 import backend from '../../utils/axios.jsx';
 import { addData } from '../../utils/redux/userSlice.jsx';
@@ -15,7 +15,7 @@ const Signin = () => {
       email: '',
       password: '',
     },
-    validationSchema: signupValidation,
+    validationSchema: signinValidation,
     onSubmit: async (values) => {
       const res = await backend.post('/auth/signin', values);
       console.log(res);
